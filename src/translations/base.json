@@ -1,0 +1,44 @@
+{
+  "app.head.description": {
+    "defaultMessage": "Boilerplate with a simple reddit searcher"
+  },
+  "app.head.title": {
+    "defaultMessage": "Next.js Boilerplate"
+  },
+  "defaultMessages.submit": {
+    "defaultMessage": "Submit"
+  },
+  "head.title.fix": {
+    "defaultMessage": "{title} - Next.js Rest Boilerplate"
+  },
+  "languages.en": {
+    "defaultMessage": "English"
+  },
+  "languages.fi": {
+    "defaultMessage": "Finnish"
+  },
+  "pages.genericError.title": {
+    "defaultMessage": "Something went wrong"
+  },
+  "pages.index.input.placeholder": {
+    "defaultMessage": "all"
+  },
+  "pages.index.subreddit": {
+    "defaultMessage": "Subreddit"
+  },
+  "pages.index.subredditRequired": {
+    "defaultMessage": "Subreddit is required"
+  },
+  "pages.index.title": {
+    "defaultMessage": "Go to subreddit"
+  },
+  "pages.r.head.description": {
+    "defaultMessage": "View posts in r/{subreddit}"
+  },
+  "pages.r.head.title": {
+    "defaultMessage": "r/{subreddit}"
+  },
+  "pages.r.title": {
+    "defaultMessage": "Top posts from reddit"
+  }
+}
