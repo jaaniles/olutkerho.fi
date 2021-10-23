@@ -1,11 +1,11 @@
 {
-  "name": "next-restful-boilerplate",
+  "name": "olutkerho",
   "version": "0.1.0",
-  "author": "Audiovisuaali",
+  "author": "Olutkerho",
   "license": "UNLICENSED",
   "private": true,
   "engines": {
-    "node": "15.x"
+    "node": "14.x"
   },
   "scripts": {
     "start": "next dev",
