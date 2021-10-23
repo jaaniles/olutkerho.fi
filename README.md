@@ -19,7 +19,7 @@ Kaikualttiin Helsingin vaikutusvaltaisin Olutkerho
 ```
 └─src
   ├── @types
-        Global styles
+        Global types
   ├── assets
         Contains images and svgs
   ├── atoms
