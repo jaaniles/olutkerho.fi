@@ -53,7 +53,7 @@ export const colors = {
   background600: "#c8c8c8",
   background500: "#cacaca",
   background400: "#dadada",
-  background300: "#e3e3e3",
+  background300: "#362325",
   background200: "#ededed",
   background100: "#f6f6f6",
   background50: "#ffffff",
@@ -65,7 +65,6 @@ export const globalStyles = css({
     color: colors.text200,
     height: "100%",
     backgroundColor: colors.background300,
-    background: "linear-gradient(180deg, #2E2836 0%, #150F19 100%)",
     WebkitFontSmoothing: "antialiased",
   },
   button: {

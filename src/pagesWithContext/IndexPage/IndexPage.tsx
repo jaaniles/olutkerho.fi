@@ -1,12 +1,13 @@
 import React, { FC } from "react";
+
+import { Column } from "~/atoms/Column";
 import { PageContent } from "~/atoms/PageContent";
-import { H1 } from "~/atoms/typography/H1";
+import { AnimatedLogo } from "~/molecules/animated/Logo";
 
-export const IndexPage: FC = () => {
-
-  return (
-    <PageContent>
-      <H1>Olutkerho.fi</H1>
-    </PageContent>
-  );
-};
+export const IndexPage: FC = () => (
+  <PageContent>
+    <Column alignCenter>
+      <AnimatedLogo />
+    </Column>
+  </PageContent>
+);
