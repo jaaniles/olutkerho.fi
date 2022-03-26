@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 
+import { Row } from "~/atoms/Row";
+import { Link } from "~/atoms/typography/Link";
 import { useUpdateDarkMode } from "~/providers/DarkModeProvider";
 
 const Container = styled.div({
@@ -14,7 +16,10 @@ export const TopNavigation = () => {
 
   return (
     <Container>
-      Olutkerho <button onClick={handleToggleDarkMode}>toggle darkmode</button>
+      <Row>
+        <Link href="/">Olutkerho </Link>
+        <button onClick={handleToggleDarkMode}>darkmode</button>
+      </Row>
     </Container>
   );
 };

@@ -5,6 +5,7 @@ import React, { FC } from "react";
 import { defineMessages, useIntl } from "react-intl";
 import { Hydrate } from "react-query/hydration";
 
+import { PageWrapper } from "~/atoms/PageWrapper";
 import { globalStyles } from "~/design";
 import { HeaderTags } from "~/molecules/HeaderTags";
 import { ErrorBoundary } from "~/organisms/ErrorBoundary";
@@ -40,7 +41,9 @@ const App: FC<AppProps> = ({ Component, pageProps }) => (
         <Head />
         <Global styles={emotionReset} />
         <Global styles={globalStyles} />
-        <Component {...pageProps} />
+        <PageWrapper>
+          <Component {...pageProps} />
+        </PageWrapper>
       </Hydrate>
     </Providers>
   </ErrorBoundary>

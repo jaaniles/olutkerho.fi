@@ -16,9 +16,16 @@ export const useParams = <T extends ParsedUrlQuery>(): T => {
   return router.query as T;
 };
 
+/*
 export const getSubredditPage = (opts: { subreddit: string }): HrefAndAs => ({
   as: `/r/${opts.subreddit}`,
   href: "/r/[subReddit]",
+});
+*/
+
+export const getReviewPage = (opts: { r: string }): HrefAndAs => ({
+  as: `/r/${opts.r}`,
+  href: "/r/[r]",
 });
 
 export const getIndexPath = (): HrefOnly => ({

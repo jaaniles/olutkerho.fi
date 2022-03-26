@@ -1,5 +1,6 @@
 import { ReviewThumbnail } from "~/atoms/ReviewThumbnail";
 import { Row } from "~/atoms/Row";
+import { Link } from "~/atoms/typography/Link";
 import { useReviewsQuery } from "~/pagesWithContext/IndexPage/indexPageQueries";
 
 export const NewReviews = () => {
@@ -12,7 +13,9 @@ export const NewReviews = () => {
   return (
     <Row>
       {reviews.map((r, i) => (
-        <ReviewThumbnail key={i} review={r} />
+        <Link key={i} href={`/r/${r.slug}`}>
+          <ReviewThumbnail review={r} />
+        </Link>
       ))}
     </Row>
   );

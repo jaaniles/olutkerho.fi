@@ -7,6 +7,7 @@ const reviewQuery = `
 {
   reviewCollection {
     items {
+      slug
       title
       tasteEvaluation
       priceEvaluation
