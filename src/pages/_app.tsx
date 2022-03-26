@@ -13,11 +13,11 @@ import { Providers } from "~/providers/Providers";
 const messages = defineMessages({
   headTitle: {
     id: "app.head.title",
-    defaultMessage: "Next.js Boilerplate",
+    defaultMessage: "Olutkerho ry",
   },
   headDescription: {
     id: "app.head.description",
-    defaultMessage: "Boilerplate with a simple reddit searcher",
+    defaultMessage: "Olutkerho ry",
   },
 });
 

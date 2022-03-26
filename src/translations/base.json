@@ -1,15 +1,15 @@
 {
   "app.head.description": {
-    "defaultMessage": "Boilerplate with a simple reddit searcher"
+    "defaultMessage": "Olutkerho ry"
   },
   "app.head.title": {
-    "defaultMessage": "Next.js Boilerplate"
+    "defaultMessage": "Olutkerho ry"
   },
   "defaultMessages.submit": {
     "defaultMessage": "Submit"
   },
   "head.title.fix": {
-    "defaultMessage": "{title} - Next.js Rest Boilerplate"
+    "defaultMessage": "Olutkerho Ry"
   },
   "languages.en": {
     "defaultMessage": "English"

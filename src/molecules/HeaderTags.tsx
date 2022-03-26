@@ -5,7 +5,7 @@ import { defineMessages, useIntl } from "react-intl";
 const messages = defineMessages({
   titleFix: {
     id: "head.title.fix",
-    defaultMessage: "{title} - Next.js Rest Boilerplate",
+    defaultMessage: "Olutkerho Ry",
   },
 });
 
