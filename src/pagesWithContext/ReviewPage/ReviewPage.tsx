@@ -6,6 +6,7 @@ import { useReviewsQuery } from "../IndexPage/indexPageQueries";
 import { PageContent } from "~/atoms/PageContent";
 import { Row } from "~/atoms/Row";
 import { H1 } from "~/atoms/typography/H1";
+import { NewReviews } from "~/molecules/NewReviews";
 import { TopNavigation } from "~/organisms/navigation/TopNavigation";
 import { useParams } from "~/paths";
 
@@ -39,6 +40,7 @@ export const ReviewPage: FC = () => {
             />
           </div>
         </Row>
+        <NewReviews />
       </PageContent>
     </>
   );
