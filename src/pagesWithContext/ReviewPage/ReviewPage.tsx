@@ -1,10 +1,11 @@
 import React, { FC } from "react";
-import ReactPlayer from "react-player";
 
 import { useReviewsQuery } from "../IndexPage/indexPageQueries";
 
+import { Column } from "~/atoms/Column";
+import { Grid } from "~/atoms/Grid";
 import { PageContent } from "~/atoms/PageContent";
-import { Row } from "~/atoms/Row";
+import { Shortvideo } from "~/atoms/Shortvideo";
 import { H1 } from "~/atoms/typography/H1";
 import { NewReviews } from "~/molecules/NewReviews";
 import { TopNavigation } from "~/organisms/navigation/TopNavigation";
@@ -20,26 +21,25 @@ export const ReviewPage: FC = () => {
 
   const review = reviews?.find((r) => r.slug === slug);
 
+  if (!review) {
+    return null;
+  }
+
   return (
     <>
       <TopNavigation />
       <PageContent>
-        <H1>{review?.title}</H1>
-        <Row>
-          <div>
+        <Grid twoCol>
+          <Column center>
+            <H1>{review?.title}</H1>
             <p>* {review?.tasteEvaluation}</p>
             <p>* {review?.priceEvaluation}</p>
             <p>* {review?.dokabilityEvaluation}</p>
-          </div>
-          <div>
-            <ReactPlayer
-              url={review?.shortvideo.url}
-              loop={true}
-              playing={true}
-              muted
-            />
-          </div>
-        </Row>
+          </Column>
+          <Column center>
+            <Shortvideo url={review.shortvideo.url} />
+          </Column>
+        </Grid>
         <NewReviews />
       </PageContent>
     </>
