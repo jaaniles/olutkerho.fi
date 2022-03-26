@@ -23,6 +23,7 @@
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "axios": "^0.21.1",
+    "contentful": "^9.1.18",
     "emotion-reset": "^3.0.0",
     "facepaint": "^1.2.1",
     "framer-motion": "4.1.17",
