@@ -29,17 +29,13 @@ export const ReviewPage: FC = () => {
     <>
       <TopNavigation />
       <PageContent>
-        <Grid twoCol>
-          <Column center>
-            <H1>{review?.title}</H1>
-            <p>* {review?.tasteEvaluation}</p>
-            <p>* {review?.priceEvaluation}</p>
-            <p>* {review?.dokabilityEvaluation}</p>
-          </Column>
-          <Column center>
-            <Shortvideo url={review.shortvideo.url} />
-          </Column>
-        </Grid>
+        <Column center>
+          <H1>{review?.title}</H1>
+          <p>* {review?.tasteEvaluation}</p>
+          <p>* {review?.priceEvaluation}</p>
+          <p>* {review?.dokabilityEvaluation}</p>
+        </Column>
+        <Shortvideo url={review.shortvideo.url} />
         <NewReviews />
       </PageContent>
     </>
