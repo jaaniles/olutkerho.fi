@@ -1,6 +1,5 @@
 import { Grid } from "~/atoms/Grid";
 import { ReviewThumbnail } from "~/atoms/ReviewThumbnail";
-import { Link } from "~/atoms/typography/Link";
 import { useReviewsQuery } from "~/pagesWithContext/IndexPage/indexPageQueries";
 
 export const NewReviews = () => {
@@ -11,11 +10,20 @@ export const NewReviews = () => {
   }
 
   return (
-    <Grid threeCol>
+    <Grid
+      threeCol
+      initial="initial"
+      animate="animate"
+      variants={{
+        animate: {
+          transition: {
+            staggerChildren: 0.15,
+          },
+        },
+      }}
+    >
       {reviews.map((r, i) => (
-        <Link key={i} href={`/r/${r.slug}`}>
-          <ReviewThumbnail review={r} />
-        </Link>
+        <ReviewThumbnail key={i} review={r} />
       ))}
     </Grid>
   );

@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
 import { mq, scale } from "~/design";
 
@@ -11,7 +12,7 @@ type Props = {
   gridGap?: string | string[];
 };
 
-export const Grid = styled.div<Props>(
+export const Grid = styled(motion.div)<Props>(
   mq({
     display: "grid",
     gridTemplateColumns: "repeat(12, 1fr)",

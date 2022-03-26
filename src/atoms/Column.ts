@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
 type Props = {
   center?: boolean;
@@ -8,7 +9,7 @@ type Props = {
   alignCenter?: boolean;
 };
 
-export const Column = styled.div<Props>(
+export const Column = styled(motion.div)<Props>(
   {
     display: "flex",
     flexDirection: "column",

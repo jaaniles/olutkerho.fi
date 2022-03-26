@@ -27,7 +27,7 @@ export const ReviewPage: FC = () => {
   return (
     <>
       <TopNavigation />
-      <PageContent>
+      <PageContent layout>
         <Column center>
           <H1>{review?.title}</H1>
           <p>* {review?.tasteEvaluation}</p>

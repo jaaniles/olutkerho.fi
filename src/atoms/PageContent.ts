@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-export const PageContent = styled.div(({ theme }) => ({
+export const PageContent = styled(motion.div)(({ theme }) => ({
   width: "100%",
   margin: `${theme.scale(4)} auto 0`,
   padding: theme.scale(4),
