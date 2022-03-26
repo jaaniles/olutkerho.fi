@@ -16,7 +16,7 @@ export const TopNavigation = () => {
 
   return (
     <Container>
-      <Row>
+      <Row css={{ justifyContent: "space-between" }}>
         <Link href="/">Olutkerho </Link>
         <button onClick={handleToggleDarkMode}>darkmode</button>
       </Row>
