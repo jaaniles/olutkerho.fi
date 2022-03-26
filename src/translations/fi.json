@@ -5,6 +5,5 @@
   "head.title.fix": "{title} - No Limits",
   "languages.en": "Englanti",
   "languages.fi": "Suomi",
-  "pages.genericError.title": "Virhe",
-  "pages.index.input.placeholder": "all"
+  "pages.genericError.title": "Virhe"
 }
