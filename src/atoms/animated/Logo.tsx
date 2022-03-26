@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React from "react";
 import Confetti from "react-confetti";
 
 import { Column } from "~/atoms/Column";
@@ -25,6 +25,7 @@ const Froth = styled(motion.div)({
 
 const Fill = styled(motion.div)({
   width: "100%",
+  height: "100%",
   position: "absolute",
   bottom: 0,
   left: 0,
@@ -41,84 +42,58 @@ const Bottom = styled.div({
   zIndex: 1000,
 });
 
-export const AnimatedLogo = () => {
-  const [frothIsOn, startFroth] = useState(false);
-
-  const handleStartFroth = () => {
-    startFroth(true);
-  };
-
-  return (
-    <div css={{ position: "relative" }}>
-      <Column
-        css={{
-          position: "relative",
-          width: LOGO_WIDTH,
-          height: LOGO_HEIGHT,
-          justifyContent: "space-between",
-        }}
-      >
-        <Fill
-          initial="initial"
-          animate="fill"
-          variants={{
-            initial: {
-              height: "0%",
+export const AnimatedLogo = () => (
+  <div css={{ position: "relative" }}>
+    <Column
+      css={{
+        position: "relative",
+        width: LOGO_WIDTH,
+        height: LOGO_HEIGHT,
+        justifyContent: "space-between",
+      }}
+    >
+      <Fill />
+      <Froth
+        initial="initial"
+        animate="animate"
+        variants={{
+          initial: {
+            opacity: 0,
+            scaleY: -1,
+            y: "0%",
+          },
+          animate: {
+            opacity: 1,
+            y: "-100%",
+            transition: {
+              ease: "linear",
+              delay: 0.25,
             },
-            fill: {
-              height: "100%",
-              transition: {
-                delay: 0.15,
-                ease: "easeOut",
-                duration: 1.25,
-              },
-            },
-          }}
-          onAnimationComplete={handleStartFroth}
-        />
-        <Froth
-          initial="initial"
-          animate={frothIsOn ? "animate" : "initial"}
-          variants={{
-            initial: {
-              opacity: 0,
-              scaleY: -1,
-              y: "0%",
-            },
-            animate: {
-              opacity: 1,
-              y: "-100%",
-              transition: {
-                ease: "linear",
-                delay: 0.25,
-              },
-            },
-          }}
-        />
-        <Bottom />
-      </Column>
-      <Confetti
-        run={frothIsOn}
-        width={LOGO_WIDTH}
-        height={LOGO_HEIGHT}
-        colors={["#D38A00", "#FDFFB0"]}
-        gravity={-0.4}
-        friction={0.5}
-        initialVelocityY={100}
-        confettiSource={{ x: 0, y: LOGO_HEIGHT, w: LOGO_WIDTH, h: 0 }}
-        opacity={0.18}
-        drawShape={(ctx) => {
-          ctx.beginPath();
-          for (let i = 0; i < 22; i++) {
-            const angle = 0.25 * i;
-            const x = (0.2 + 1.5 * angle) * Math.cos(angle);
-            const y = (0.2 + 1.5 * angle) * Math.sin(angle);
-            ctx.lineTo(x, y);
-          }
-          ctx.stroke();
-          ctx.closePath();
+          },
         }}
       />
-    </div>
-  );
-};
+      <Bottom />
+    </Column>
+    <Confetti
+      width={LOGO_WIDTH}
+      height={LOGO_HEIGHT}
+      colors={["#D38A00", "#FDFFB0"]}
+      gravity={-0.4}
+      friction={0.5}
+      initialVelocityY={100}
+      confettiSource={{ x: 0, y: LOGO_HEIGHT, w: LOGO_WIDTH, h: 0 }}
+      opacity={0.18}
+      drawShape={(ctx) => {
+        ctx.beginPath();
+        for (let i = 0; i < 22; i++) {
+          const angle = 0.25 * i;
+          const x = (0.2 + 1.5 * angle) * Math.cos(angle);
+          const y = (0.2 + 1.5 * angle) * Math.sin(angle);
+          ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+        ctx.closePath();
+      }}
+    />
+  </div>
+);

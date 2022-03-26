@@ -31,7 +31,10 @@ const initialValues = false;
  */
 const DarkModeContext = createContext<boolean>(initialValues);
 
-type ContextStates = ((newDarkMode: boolean) => void) | null;
+type ContextStates = null | {
+  onDarkModeChange: (newDarkMode: boolean) => void;
+  toggleDarkMode: () => void;
+};
 const UpdateDarkModeContext = createContext<ContextStates>(null);
 
 /**
@@ -62,6 +65,10 @@ export const DarkModeProvider: FC = ({ children }) => {
     set<boolean>(LocalStorage.DARKMODE, isDarkMode);
   }, [isDarkMode]);
 
+  const toggleDarkMode = useCallback(() => {
+    setIsDarkMode(!isDarkMode);
+  }, [isDarkMode]);
+
   const onDarkModeChange = useCallback((newDarkMode: boolean) => {
     set<boolean>(LocalStorage.LANG, newDarkMode);
     setIsDarkMode(newDarkMode);
@@ -69,7 +76,9 @@ export const DarkModeProvider: FC = ({ children }) => {
 
   return (
     <DarkModeContext.Provider value={isDarkMode}>
-      <UpdateDarkModeContext.Provider value={onDarkModeChange}>
+      <UpdateDarkModeContext.Provider
+        value={{ onDarkModeChange, toggleDarkMode }}
+      >
         {children}
       </UpdateDarkModeContext.Provider>
     </DarkModeContext.Provider>

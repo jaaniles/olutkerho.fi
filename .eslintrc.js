@@ -36,7 +36,6 @@ module.exports = {
     "generator-star-spacing": ["error", { before: false, after: true }],
     "func-style": ["error", "declaration", { allowArrowFunctions: true }],
     "no-nested-ternary": "error",
-    "react/no-array-index-key": "error",
     "no-use-before-define": 0,
     curly: ["error", "all"],
     "arrow-body-style": ["error", "as-needed"],

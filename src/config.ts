@@ -7,5 +7,8 @@ const requireEnv = (env: string | undefined): string => {
 };
 
 export const config = {
-  apiEndpoint: requireEnv(process.env.NEXT_PUBLIC_API_ENDPOINT),
+  contentfulSpaceId: requireEnv(process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID),
+  contentfulAccessToken: requireEnv(
+    process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+  ),
 };
