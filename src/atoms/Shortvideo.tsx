@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import React, { forwardRef } from "react";
+import React from "react";
 import ReactPlayer from "react-player";
 
 const VideoContainer = styled.div({
@@ -11,14 +11,7 @@ const VideoContainer = styled.div({
 
   overflow: "hidden",
   borderRadius: 32,
-  boxShadow: "rgba(0, 0, 0, 0.25) 0px 20px 50px",
 });
-
-const VideoWrapper = forwardRef<HTMLDivElement>(({ children }, ref) => (
-  <VideoContainer ref={ref}>{children}</VideoContainer>
-));
-
-VideoWrapper.displayName = "VideoWrapper";
 
 export const Shortvideo = ({ url }: { url: string }) => (
   <VideoContainer>

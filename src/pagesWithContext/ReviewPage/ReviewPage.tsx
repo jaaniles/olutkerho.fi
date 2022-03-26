@@ -3,7 +3,6 @@ import React, { FC } from "react";
 import { useReviewsQuery } from "../IndexPage/indexPageQueries";
 
 import { Column } from "~/atoms/Column";
-import { Grid } from "~/atoms/Grid";
 import { PageContent } from "~/atoms/PageContent";
 import { Shortvideo } from "~/atoms/Shortvideo";
 import { H1 } from "~/atoms/typography/H1";
