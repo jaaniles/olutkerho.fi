@@ -1,8 +1,8 @@
 {
-  "app.head.description": "Boilerplate with a simple reddit searcher",
-  "app.head.title": "Next.js Boilerplate",
+  "app.head.description": "Olutkerho ry",
+  "app.head.title": "Olutkerho ry",
   "defaultMessages.submit": "Submit",
-  "head.title.fix": "{title} - Next.js Rest Boilerplate",
+  "head.title.fix": "Olutkerho Ry",
   "languages.en": "English",
   "languages.fi": "Finnish",
   "pages.genericError.title": "Something went wrong"
