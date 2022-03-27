@@ -1,6 +1,7 @@
 export type Review = {
   slug: string;
   title: string;
+  date: string;
   tasteEvaluation: string;
   priceEvaluation: string;
   dokabilityEvaluation: string;
@@ -9,4 +10,15 @@ export type Review = {
     fileName: string;
     url: string;
   };
+};
+
+export type Partner = {
+  slug: string;
+  name: string;
+  logo: {
+    title: string;
+    filename: string;
+    url: string;
+  };
+  link: string;
 };

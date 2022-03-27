@@ -5,6 +5,7 @@ import { PageContent } from "~/atoms/PageContent";
 import { Hero } from "~/molecules/Hero";
 import { NewReviews } from "~/molecules/NewReviews";
 import { TopNavigation } from "~/organisms/navigation/TopNavigation";
+import { PartnerCloud } from "~/organisms/partnerCloud/PartnerCloud";
 
 export const IndexPage: FC = () => (
   <>
@@ -15,6 +16,8 @@ export const IndexPage: FC = () => (
       </Column>
 
       <NewReviews />
+
+      <PartnerCloud />
     </PageContent>
   </>
 );
