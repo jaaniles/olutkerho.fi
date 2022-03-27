@@ -25,7 +25,7 @@ export const TopNavigation = () => {
         spaceBetween
         alignCenter
       >
-        <Link href="/">Olutkerho </Link>
+        <Link href="/">🍻 Olutkerho 🍻</Link>
         <div>
           <button onClick={handleToggleDarkMode}>darkmode</button>
         </div>

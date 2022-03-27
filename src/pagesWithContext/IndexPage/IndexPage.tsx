@@ -24,8 +24,8 @@ export const IndexPage: FC = () => (
           textAlign: "center",
         }}
       >
-        <H3>Kaikualttiin Helsingin ytimessä toimii Olutkerho ry. </H3>
-        <p>Voit lakata unelmoimasta.</p>
+        <H3>Kaikualttiin Helsingin ytimessä toimii Olutkerho ry. 🍻</H3>
+        <p>Voit lakata unelmoimasta. 🍻🍻</p>
       </div>
 
       <NewReviews />

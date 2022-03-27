@@ -40,9 +40,9 @@ export const ReviewContent = ({ review }: { review: Review }) => (
   <div>
     <Column center layout="position">
       <H1>{review?.title}</H1>
-      <p>* {review?.tasteEvaluation}</p>
-      <p>* {review?.priceEvaluation}</p>
-      <p>* {review?.dokabilityEvaluation}</p>
+      <p>🍻 {review?.tasteEvaluation}</p>
+      <p>🍻 {review?.priceEvaluation}</p>
+      <p>🍻 {review?.dokabilityEvaluation}</p>
     </Column>
     <Shortvideo url={review.shortvideo.url} />
   </div>
