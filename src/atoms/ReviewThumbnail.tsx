@@ -6,28 +6,46 @@ import { H3 } from "./typography/H3";
 import { Link } from "./typography/Link";
 
 import { Review } from "~/@types/contentful";
+import { ReviewContent } from "~/pagesWithContext/ReviewPage/ReviewPage";
 
 const Card = styled(motion.div)(({ theme }) => ({
   background: theme.colors.background100,
   padding: theme.scale(4),
 }));
 
-export const ReviewThumbnail = ({ review }: { review: Review }) => (
-  <Link href={`/r/${review.slug}`}>
+export const ReviewThumbnail = ({
+  review,
+  isSelected,
+}: {
+  review: Review;
+  isSelected: boolean;
+}) => (
+  <Link href={isSelected ? "/" : `/preview/${review.slug}`}>
     <Card
+      initial="initial"
+      animate={isSelected ? "animate" : "initial"}
+      layout
       variants={{
         initial: {
-          opacity: 0,
-          scale: 0.95,
+          position: "relative",
+          opacity: 1,
+          top: "0%",
         },
         animate: {
-          opacity: 1,
-          scale: 1,
+          position: "absolute",
+          top: "100%",
+          zIndex: 1000,
+          opacity: 0.95,
         },
       }}
     >
-      <H3>Arvio</H3>
-      <H2>{review.title}</H2>
+      {!isSelected && (
+        <>
+          <H3>Arvio</H3>
+          <H2>{review.title}</H2>
+        </>
+      )}
+      {isSelected && <ReviewContent review={review} />}
     </Card>
   </Link>
 );

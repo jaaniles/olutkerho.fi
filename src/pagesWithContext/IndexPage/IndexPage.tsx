@@ -16,7 +16,6 @@ export const IndexPage: FC = () => (
       </Column>
 
       <NewReviews />
-
       <PartnerCloud />
     </PageContent>
   </>

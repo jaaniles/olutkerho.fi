@@ -2,6 +2,7 @@ import React, { FC } from "react";
 
 import { useReviewsQuery } from "../IndexPage/indexPageQueries";
 
+import { Review } from "~/@types/contentful";
 import { Column } from "~/atoms/Column";
 import { PageContent } from "~/atoms/PageContent";
 import { Shortvideo } from "~/atoms/Shortvideo";
@@ -28,15 +29,21 @@ export const ReviewPage: FC = () => {
     <>
       <TopNavigation />
       <PageContent layout>
-        <Column center layout="position">
-          <H1>{review?.title}</H1>
-          <p>* {review?.tasteEvaluation}</p>
-          <p>* {review?.priceEvaluation}</p>
-          <p>* {review?.dokabilityEvaluation}</p>
-        </Column>
-        <Shortvideo url={review.shortvideo.url} />
+        <ReviewContent review={review} />
         <NewReviews />
       </PageContent>
     </>
   );
 };
+
+export const ReviewContent = ({ review }: { review: Review }) => (
+  <div>
+    <Column center layout="position">
+      <H1>{review?.title}</H1>
+      <p>* {review?.tasteEvaluation}</p>
+      <p>* {review?.priceEvaluation}</p>
+      <p>* {review?.dokabilityEvaluation}</p>
+    </Column>
+    <Shortvideo url={review.shortvideo.url} />
+  </div>
+);
