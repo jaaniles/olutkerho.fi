@@ -4,6 +4,7 @@ import { useReviewsQuery } from "../IndexPage/indexPageQueries";
 import { ReviewContent } from "../ReviewPage/ReviewPage";
 
 import { PageContent } from "~/atoms/PageContent";
+import { Footer } from "~/organisms/navigation/Footer";
 import { TopNavigation } from "~/organisms/navigation/TopNavigation";
 
 export const ReviewFeedPage: FC = () => {
@@ -17,6 +18,7 @@ export const ReviewFeedPage: FC = () => {
           <ReviewContent key={i} review={review} />
         ))}
       </PageContent>
+      <Footer />
     </>
   );
 };
