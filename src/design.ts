@@ -28,7 +28,7 @@ export const colors = {
   primary600: "#1e88e5",
   primary700: "#1976d2",
   primary800: "#1565c0",
-  primary900: "#0d47a1",
+  primary900: "#203040",
   error100: "#ffcdd2",
   error200: "#ef9a9a",
   error300: "#e57373",
@@ -68,7 +68,7 @@ export const darkColors = {
   primary600: "#1e88e5",
   primary700: "#1976d2",
   primary800: "#1565c0",
-  primary900: "#0d47a1",
+  primary900: "#203040",
   error100: "#ffcdd2",
   error200: "#ef9a9a",
   error300: "#e57373",
@@ -78,6 +78,28 @@ export const darkColors = {
   error700: "#d32f2f",
   error800: "#c62828",
   error900: "#b71c1c",
+  text100: "#000000",
+  text200: "#191919",
+  text300: "#393939",
+  text400: "#696969",
+  text500: "#999999",
+  text600: "#cccccc",
+  text700: "#ededed",
+  text800: "#f6f6f6",
+  text900: "#ffffff",
+  background900: "#000000",
+  background800: "#191919",
+  background700: "#393939",
+  background600: "#696969",
+  background500: "#999999",
+  background400: "#cccccc",
+  background300: "#ededed",
+  background200: "#ededed",
+  background100: "#f6f6f6",
+  background50: "#ffffff",
+};
+
+/* DARK
   text900: "#000000",
   text800: "#191919",
   text700: "#393939",
@@ -97,11 +119,11 @@ export const darkColors = {
   background700: "#ededed",
   background800: "#f6f6f6",
   background900: "#ffffff",
-};
+*/
 
 export const globalStyles = css({
   html: {
-    fontFamily: "GTAmerica, sans-serif",
+    fontFamily: "Montserrat, sans-serif",
     height: "100%",
     WebkitFontSmoothing: "antialiased",
   },
@@ -153,7 +175,7 @@ export const lightTheme: Theme = {
 };
 
 export const darkTheme: Theme = {
-  colors: darkColors,
+  colors,
   fontSizes,
   fontWeights,
   mq,

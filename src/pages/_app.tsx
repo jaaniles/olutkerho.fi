@@ -5,6 +5,8 @@ import React, { FC } from "react";
 import { defineMessages, useIntl } from "react-intl";
 import { Hydrate } from "react-query/hydration";
 
+import "~/index.css";
+
 import { PageWrapper } from "~/atoms/PageWrapper";
 import { globalStyles } from "~/design";
 import { HeaderTags } from "~/molecules/HeaderTags";
