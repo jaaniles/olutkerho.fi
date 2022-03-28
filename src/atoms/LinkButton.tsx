@@ -11,7 +11,11 @@ type Props = LinkProps & {
   className?: string;
 };
 
-const StyledLink = styled(Button)({ textDecoration: "none", display: "block" });
+const StyledLink = styled.button({
+  textDecoration: "none",
+  display: "block",
+  color: "inherit",
+});
 
 export const LinkButton: FC<Props> = ({
   children,
@@ -32,7 +36,7 @@ export const LinkButton: FC<Props> = ({
 
   return (
     <Link href={href} as={as} shallow={shallow} passHref>
-      <StyledLink as="a" className={className} noMargin={noMargin}>
+      <StyledLink as="a" className={className}>
         {children}
       </StyledLink>
     </Link>

@@ -1,35 +1,28 @@
 import styled from "@emotion/styled";
 
+import { LinkButton } from "~/atoms/LinkButton";
 import { Row } from "~/atoms/Row";
-import { Link } from "~/atoms/typography/Link";
+import { H2 } from "~/atoms/typography/H2";
 import { scale } from "~/design";
-import { useUpdateDarkMode } from "~/providers/DarkModeProvider";
 
-const Container = styled(Row)(({ theme }) => ({
-  background: theme.colors.background100,
+const Container = styled(Row)({
   width: "100%",
-  padding: `${scale(2)} 0`,
+  padding: `${scale(2)} ${scale(2)}`,
 
   transition: "background 1s",
-}));
+});
 
-export const TopNavigation = () => {
-  const { toggleDarkMode } = useUpdateDarkMode();
-
-  const handleToggleDarkMode = () => toggleDarkMode();
-
-  return (
-    <Container>
-      <Row
-        css={{ width: "100%", maxWidth: scale(200), margin: "0 auto" }}
-        spaceBetween
-        alignCenter
-      >
-        <Link href="/">🍻 Olutkerho 🍻</Link>
-        <div>
-          <button onClick={handleToggleDarkMode}>darkmode</button>
-        </div>
-      </Row>
-    </Container>
-  );
-};
+export const TopNavigation = () => (
+  <Container>
+    <Row
+      css={{ width: "100%", maxWidth: scale(200), margin: "0 auto" }}
+      spaceBetween
+      alignCenter
+    >
+      <LinkButton href="/">
+        <H2>Olutkerho</H2>
+        <p css={{ letterSpacing: "0.2em" }}>By the book, no limits</p>
+      </LinkButton>
+    </Row>
+  </Container>
+);
