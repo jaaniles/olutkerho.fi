@@ -123,9 +123,13 @@ export const darkColors = {
 
 export const globalStyles = css({
   html: {
+    color: colors.primary900,
     fontFamily: "Montserrat, sans-serif",
     height: "100%",
     WebkitFontSmoothing: "antialiased",
+  },
+  "h1, h2, h3, h4": {
+    fontFamily: "Rammetto One",
   },
   button: {
     fontFamily: "inherit",

@@ -1,10 +1,12 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { FC, useState } from "react";
 
+import { Column } from "~/atoms/Column";
 import { PageContent } from "~/atoms/PageContent";
-import { H3 } from "~/atoms/typography/H3";
+import { Section } from "~/atoms/Section";
+import { H1 } from "~/atoms/typography/H1";
+import { H2 } from "~/atoms/typography/H2";
 import { scale } from "~/design";
-import { NewReviews } from "~/molecules/NewReviews";
 import { StartScreen } from "~/molecules/animated/StartScreen";
 import { Footer } from "~/organisms/navigation/Footer";
 import { TopNavigation } from "~/organisms/navigation/TopNavigation";
@@ -50,12 +52,19 @@ const Index = () => (
           textAlign: "center",
         }}
       >
-        <H3>Kaikualttiin Helsingin ytimessä toimii Olutkerho ry. 🍻</H3>
-        <p>Voit lakata unelmoimasta. 🍻🍻</p>
+        <H1>Kaikualttiin</H1>
+        <H1>Helsingin ytimessä</H1>
+        <p css={{ fontSize: 40 }}>Voit lakata unelmoimasta</p>
       </div>
 
-      <NewReviews />
       <PartnerCloud />
+
+      <Section>
+        <Column alignCenter>
+          <H2>Jäseneksi?</H2>
+          <p>Ota yhteyttä</p>
+        </Column>
+      </Section>
     </PageContent>
     <Footer />
   </motion.div>
