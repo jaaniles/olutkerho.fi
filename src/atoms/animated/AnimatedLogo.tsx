@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion/dist/framer-motion";
 
 export const AnimatedLogo = ({
   handleLogoAnimationComplete,

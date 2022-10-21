@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion/dist/framer-motion";
 import React from "react";
 import Confetti from "react-confetti";
 

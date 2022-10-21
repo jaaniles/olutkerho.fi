@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion/dist/framer-motion";
 import React from "react";
 
 import { Column } from "~/atoms/Column";

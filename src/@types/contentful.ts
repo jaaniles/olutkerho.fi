@@ -1,6 +1,7 @@
 export type Review = {
   slug: string;
   title: string;
+  brewery: string;
   date: string;
   tasteEvaluation: string;
   priceEvaluation: string;

@@ -9,6 +9,7 @@ const reviewQuery = `
     items {
       slug
       title
+      brewery
       tasteEvaluation
       priceEvaluation
       dokabilityEvaluation

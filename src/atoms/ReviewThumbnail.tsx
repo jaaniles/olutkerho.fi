@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion/dist/framer-motion";
 
 import { H2 } from "./typography/H2";
 import { H3 } from "./typography/H3";
