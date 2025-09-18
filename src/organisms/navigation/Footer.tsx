@@ -18,11 +18,9 @@ export const Footer = () => (
   <Container>
     <Row
       css={{ width: "100%", maxWidth: scale(200), margin: "0 auto" }}
-      spaceBetween
       alignCenter
     >
-      <p>Olutkerho ry (3249577-3)</p>
-      <p>puheenjohtaja(at)olutkerho.fi</p>
+      <p style={{ margin: "0 auto" }}>Olutkerho ry (3249577-3)</p>
     </Row>
   </Container>
 );

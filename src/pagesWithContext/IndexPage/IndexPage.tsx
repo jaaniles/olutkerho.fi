@@ -48,14 +48,14 @@ const Index = () => (
       <TopNavigation />
       <div
         css={{
-          padding: `${scale(16)} 0`,
+          padding: `${scale(16)} ${scale(4)}`,
           textAlign: "center",
         }}
       >
         <p>Kerho oluen ystäville</p>
         <div css={{ color: colors.text900, paddingBottom: scale(24) }}>
           <H1>kaikualttiin</H1>
-          <H1>Helsingin ytimessä</H1>
+          <H1>kaupungin ytimessä</H1>
 
           <Section css={{ color: colors.primary900 }}>
             <Column alignCenter>
