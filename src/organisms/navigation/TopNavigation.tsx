@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
+import { Column } from "~/atoms/Column";
 
-import { LinkButton } from "~/atoms/LinkButton";
 import { Row } from "~/atoms/Row";
 import { H2 } from "~/atoms/typography/H2";
 import { scale } from "~/design";
@@ -14,15 +14,13 @@ const Container = styled(Row)({
 
 export const TopNavigation = () => (
   <Container>
-    <Row
+    <Column
       css={{ width: "100%", maxWidth: scale(200), margin: "0 auto" }}
       spaceBetween
       alignCenter
     >
-      <LinkButton href="/">
-        <H2>Olutkerho</H2>
-        <p css={{ letterSpacing: "0.2em" }}>By the book, no limits</p>
-      </LinkButton>
-    </Row>
+      <H2>Olutkerho</H2>
+      <p css={{ letterSpacing: "0.2em" }}>By the book, no limits</p>
+    </Column>
   </Container>
 );

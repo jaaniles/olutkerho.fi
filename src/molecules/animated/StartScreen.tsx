@@ -105,7 +105,6 @@ export const StartScreen = ({
               },
             },
           }}
-          style={{ fontFamily: "Rammetto One", color: colors.primary900 }}
         >
           By the book, no limits
         </motion.p>

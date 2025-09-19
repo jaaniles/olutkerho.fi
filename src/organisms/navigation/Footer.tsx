@@ -12,6 +12,8 @@ const Container = styled(Row)({
   padding: scale(2),
 
   transition: "background 1s ease-in-out",
+
+  paddingBottom: scale(8),
 });
 
 export const Footer = () => (
