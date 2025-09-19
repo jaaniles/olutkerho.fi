@@ -8,6 +8,8 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended",
+    "next",
+    "next/core-web-vitals",
   ],
   plugins: ["switch-case"],
   parser: "@typescript-eslint/parser",
