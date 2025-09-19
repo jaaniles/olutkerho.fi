@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { FC, useState } from "react";
 
 import { Column } from "~/atoms/Column";
