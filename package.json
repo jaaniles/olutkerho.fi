@@ -66,7 +66,7 @@
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.1",
-    "eslint": "^7.21.0",
+    "eslint": "^8.21.0",
     "eslint-config-next": "^15.5.3",
     "eslint-config-prettier": "^8.1.0",
     "eslint-config-standard": "^16.0.2",
@@ -85,7 +85,7 @@
     "prettier": "^2.2.1",
     "ts-jest": "^26.5.2",
     "ts-node": "^9.1.1",
-  "typescript": "^5.4.5"
+    "typescript": "^5.4.5"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }

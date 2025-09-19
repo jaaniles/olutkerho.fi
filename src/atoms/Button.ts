@@ -9,8 +9,6 @@ interface Props {
 
 export const Button = styled.button<Props>(({ disabled, noMargin, theme }) => ({
   border: "none",
-  cursor: "pointer",
-  color: theme.colors.text100,
   userSelect: "none",
   fontSize: theme.fontSizes.default,
   padding: `${theme.scale(3)} ${theme.scale(5)}`,
