@@ -7,7 +7,6 @@ module.exports = {
     "plugin:switch-case/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
-    "plugin:react-hooks/recommended",
     "next",
     "next/core-web-vitals",
   ],
