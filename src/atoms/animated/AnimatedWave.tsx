@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 
 const paths = [
   "M0 86.2989C424.625 86.299 596.625 158.413 1187.88 51.4899C1779.12 -55.4331 1774.14 34.6258 2066.69 70.5489C2437.56 116.091 2897.12 187.373 3440 86.299V230.845L0 230.845V86.2989Z",

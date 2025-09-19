@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 
 export const H1 = styled(motion.h1)(({ theme }) => ({
   fontSize: theme.fontSizes.h2,
