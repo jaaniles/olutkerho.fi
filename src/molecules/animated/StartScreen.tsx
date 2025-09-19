@@ -6,7 +6,7 @@ import { Column } from "~/atoms/Column";
 import { AnimatedLogo } from "~/atoms/animated/AnimatedLogo";
 import { AnimatedWave } from "~/atoms/animated/AnimatedWave";
 import { H1 } from "~/atoms/typography/H1";
-import { colors } from "~/design";
+import { colors, scale } from "~/design";
 
 const WAVE_DURATION = 3.5;
 
@@ -24,6 +24,8 @@ const Screen = styled(motion.div)({
   alignItems: "center",
 
   pointerEvents: "none",
+
+  paddingBottom: scale(8),
 });
 
 export const StartScreen = ({
@@ -103,6 +105,7 @@ export const StartScreen = ({
               },
             },
           }}
+          style={{ fontFamily: "Rammetto One", color: colors.primary900 }}
         >
           By the book, no limits
         </motion.p>
