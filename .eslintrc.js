@@ -112,5 +112,6 @@ module.exports = {
         checkInlineFunction: true,
       },
     ],
+    "@next/next/no-html-link-for-pages": "off",
   },
 };
